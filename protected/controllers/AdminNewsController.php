@@ -52,7 +52,7 @@ class AdminNewsController extends Controller
         $dcm->thumb = $_FILES['thumbNews']['name'];
 
         /*Upload Image*/
-        $dcm = Utils::uploadAvarta('thumbNews');
+        Utils::uploadAvarta('thumbNews');
         /*End*/
 
         if($dcm->save()){
