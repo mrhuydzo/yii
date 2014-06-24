@@ -89,7 +89,7 @@ class CategoryController extends Controller
     public function actionSaveCat(){
         $model = new Category();
         $model->title_cat = $_POST['title_cat'];
-        $model->Des_cat = $_POST['Des_cat'];
+        $model->Des_cat = $_POST['des_cat'];
         $model->user_id = $_POST['slUser'];
         $model->parent_id = $_POST['slParent'];
 

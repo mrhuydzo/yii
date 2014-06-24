@@ -13,7 +13,7 @@
                 }
             }
             ?>
-            <form class="form-horizontal" role="form" action="<?php echo $this->createUrl('adminNews/save') ?>" method="post">
+            <form class="form-horizontal" role="form" action="<?php echo $this->createUrl('adminNews/save') ?>" method="post" enctype="multipart/form-data">
                 <div class="form-group">
                     <label class="col-sm-1 control-label no-padding-right" for="form-field-2"> Title News </label>
                     <div class="col-sm-9">

@@ -298,10 +298,10 @@ class Utils {
                 }
             }else{
                 // không phải file ảnh
-                echo "File not defiend";
+//                echo "File not defiend";
             }
         }else{
-            echo "Chon File";
+//            echo "Chon File";
         }
     }
 }

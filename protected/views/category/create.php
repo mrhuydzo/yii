@@ -23,7 +23,7 @@
                 <div class="form-group">
                     <label class="col-sm-3 control-label no-padding-right" for="form-field-3"> Description Category </label>
                     <div class="col-sm-9">
-                        <textarea class="col-xs-10 col-sm-5" id="form-field-3" placeholder="Description Category" name="Des_cat"></textarea>
+                        <textarea class="col-xs-10 col-sm-5" id="form-field-3" placeholder="Description Category" name="des_cat"></textarea>
                     </div>
                 </div>
                 <div class="form-group">

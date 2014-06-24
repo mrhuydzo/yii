@@ -567,17 +567,8 @@
 
             // Replace the <textarea id="editor1"> with a CKEditor
             // instance, using default configuration.
-            //CKEDITOR.replace( 'content' );
-
-            CKEDITOR.replace( 'content',
-                {
-                    //filebrowserUploadUrl : '/notes/add/ajax/upload-inline-image/index.cfm'
-                    //filebrowserUploadUrl : 'upload',
-                    filebrowserUploadUrl :      'uploader.php?type=files',
-                    filebrowserImageUploadUrl : 'uploader.php?type=images',
-                    filebrowserFlashUploadUrl : 'uploader.php?type=flash'
-                }
-            );
+            //CKEDITOR.replace( 'des_cat');
+            CKEDITOR.replace( 'content');
         </script>
 
     </body>

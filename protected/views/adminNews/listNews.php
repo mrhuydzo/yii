@@ -55,9 +55,7 @@
                                     <td><a href="<?php echo $this->createUrl('category/edit',array("id"=>$model->id)); ?>"><?php echo $model->title ?></a></td>
                                     <td><a href="">Status</a></td>
                                     <td><?php echo $model->pub_time ?></td>
-                                    <?php
-                                        $user_info = User::getUsernameFromID($model->user_id);
-                                    ?>
+                                    <?php $user_info = User::getUsernameFromID($model->user_id); ?>
                                     <td><?php if($user_info) { echo $user_info[0]->display_name;}?></td>
                                     <td>
                                         <div class="visible-md visible-lg hidden-sm hidden-xs action-buttons">
@@ -202,14 +200,18 @@
         });
 
         $('#slFilter').change(function(){
-            var id = $(this).val();
-            var dataString ='id/'+id;
+            var catid = $(this).val();
+            var dataString ='catid/'+catid;
             $.ajax({
                 type:"POST",
                 url: "<?php  echo Yii::app()->createUrl('AdminNews/FilterNews'); ?>/"+dataString,
+                data: dataString,
                 success:function(html){
                     $("#sample-table-2").html(html);
                 },
+                error:function(){
+                    alert("Có lỗi xảy ra!");
+                }
             });
         });
     });
