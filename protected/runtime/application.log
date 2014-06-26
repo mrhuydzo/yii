@@ -17718,3 +17718,229 @@ Stack trace:
 REQUEST_URI=/Private/yii/huyzo/index.php?r=adminNews/save
 in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (51)
 in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/25 13:26:10 [error] [php] Missing argument 1 for CActiveRecord::findByPk(), called in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php on line 74 and defined (D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\ar\CActiveRecord.php:1481)
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): AdminNewsController->runAction()
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): AdminNewsController->runActionWithFilters()
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): AdminNewsController->run()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CWebApplication->run()
+REQUEST_URI=/Private/yii/huyzo/index.php?r=adminNews/delete&id=148
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (74)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/25 13:31:37 [error] [php] Cannot modify header information - headers already sent by (output started at D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php:75) (D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CHttpRequest.php:803)
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(79): AdminNewsController->redirect()
+#1 unknown(0): AdminNewsController->actionDelete()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): AdminNewsController->runAction()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): AdminNewsController->runActionWithFilters()
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): AdminNewsController->run()
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CWebApplication->run()
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/delete&id=136
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (79)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/25 13:40:31 [error] [php] Cannot modify header information - headers already sent by (output started at D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php:79) (D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CHttpRequest.php:803)
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(82): AdminNewsController->redirect()
+#1 unknown(0): AdminNewsController->actionDelete()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): AdminNewsController->runAction()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): AdminNewsController->runActionWithFilters()
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): AdminNewsController->run()
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CWebApplication->run()
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/delete&id=230
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (82)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/25 13:52:29 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('adminNews/delet...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=adminNews/delete
+---
+2014/06/25 13:53:29 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`yii-mysite`.`category`, CONSTRAINT `user_id` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`)). The SQL statement executed was: DELETE FROM `user` WHERE `user`.`user_id`=95.
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\UserController.php (155)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/25 13:53:29 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`yii-mysite`.`category`, CONSTRAINT `user_id` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`)). The SQL statement executed was: DELETE FROM `user` WHERE `user`.`user_id`=95' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\ar\CActiveRecord.php(1802): CDbCommand->execute()
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\ar\CActiveRecord.php(1222): CActiveRecord->deleteByPk('95')
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\UserController.php(155): CActiveRecord->delete()
+#3 [internal function]: UserController->actionDelete('95')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/delete')
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=user/delete&user_id=95
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=user/list
+---
+2014/06/25 13:57:17 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/delet...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/delete&id=52
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---
+2014/06/25 13:57:35 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/delet...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/delete&id=52
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---
+2014/06/25 13:58:40 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/delet...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/delete&id=51
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---
+2014/06/25 13:59:02 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/delet...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/delete&id=51
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---
+2014/06/25 13:59:07 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/delet...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/delete&id=51
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---
+2014/06/25 14:02:40 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/delet...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/delete&id=51
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---
+2014/06/25 14:03:09 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('adminNews/delet...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=adminNews/delete&id=228
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---
+2014/06/25 14:06:22 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/delet...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/delete&id=237
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---
+2014/06/26 06:27:32 [error] [exception.CException] exception 'CException' with message 'Property "News.in" is not defined.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('in')
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\views\adminNews\listNews.php(200): CActiveRecord->__get('in')
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CBaseController.php(126): require('D:\Xamp\htdocs\...')
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\Xamp\htdocs\...', Array, true)
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\Xamp\htdocs\...', Array, true)
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(782): CController->renderPartial('listNews', Array, true)
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(27): CController->render('listNews', Array)
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(49): AdminNewsController->actionListNews()
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('listNews')
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('adminNews/listN...')
+#13 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#15 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=adminNews/listNews
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---
+2014/06/26 06:28:15 [error] [exception.CException] exception 'CException' with message 'Property "News.in" is not defined.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('in')
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\views\adminNews\listNews.php(200): CActiveRecord->__get('in')
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CBaseController.php(126): require('D:\Xamp\htdocs\...')
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\Xamp\htdocs\...', Array, true)
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\Xamp\htdocs\...', Array, true)
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(782): CController->renderPartial('listNews', Array, true)
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(27): CController->render('listNews', Array)
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(49): AdminNewsController->actionListNews()
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('listNews')
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('adminNews/listN...')
+#13 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#15 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=adminNews/listNews
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---

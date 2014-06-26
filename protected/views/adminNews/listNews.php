@@ -37,6 +37,7 @@
                             <thead>
                             <tr>
                                 <th width="5%">STT</th>
+                                <th width="5%">id</th>
                                 <th width="10%">Thumbnail</th>
                                 <th width="50%">Tiêu đề</th>
                                 <th width="5%">Status</th>
@@ -50,22 +51,23 @@
                             //var_dump($list_model);die;
                             foreach($listNews as $key =>$model) {?>
                                 <tr>
-                                    <td><?php echo $key + 1;?></td>
-                                    <td><a href="" title=""><img src="<?php echo $model->thumb ?>" width="50" alt="" /></a></td>
-                                    <td><a href="<?php echo $this->createUrl('category/edit',array("id"=>$model->id)); ?>"><?php echo $model->title ?></a></td>
+                                    <td><?php echo $key + 1 ;?></td>
+                                    <td><?php echo $model->id ;?></td>
+                                    <td><a href="" title=""><img src="upload/<?php echo $model->thumb ?>" width="50" alt="" /></a></td>
+                                    <td><a href=""><?php echo $model->title ?></a></td>
                                     <td><a href="">Status</a></td>
                                     <td><?php echo $model->pub_time ?></td>
                                     <?php $user_info = User::getUsernameFromID($model->user_id); ?>
                                     <td><?php if($user_info) { echo $user_info[0]->display_name;}?></td>
                                     <td>
                                         <div class="visible-md visible-lg hidden-sm hidden-xs action-buttons">
-                                            <a class="blue" href="<?php echo $this->createUrl('category/view',array("user_id"=>$model->id)); ?>">
+                                            <a class="blue" href="">
                                                 <i class="icon-zoom-in bigger-130"></i>
                                             </a>
-                                            <a class="green" href="<?php echo $this->createUrl('category/editCat',array("id"=>$model->id)); ?>">
+                                            <a class="green" href="">
                                                 <i class="icon-pencil bigger-130"></i>
                                             </a>
-                                            <a class="red" href="javascript:void(0)">
+                                            <a class="red"  href="javascript:void(0)">
                                                 <i class="icon-trash bigger-130"></i>
                                             </a>
                                         </div>
@@ -78,17 +80,17 @@
 
                                                 <ul class="dropdown-menu dropdown-only-icon dropdown-yellow pull-right dropdown-caret dropdown-close">
                                                     <li>
-                                                        <a href="<?php echo $this->createUrl('type/view',array("user_id"=>$model->id)); ?>" class="tooltip-info" data-rel="tooltip" title="View">
+                                                        <a href="" class="tooltip-info" data-rel="tooltip" title="View">
                                                             <span class="blue"><i class="icon-zoom-in bigger-120"></i></span>
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="<?php echo $this->createUrl('type/edit',array("user_id"=>$model->id)); ?>" class="tooltip-success" data-rel="tooltip" title="Edit">
+                                                        <a href="" class="tooltip-success" data-rel="tooltip" title="Edit">
                                                             <span class="green"><i class="icon-edit bigger-120"></i></span>
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">
+                                                        <a href="" class="tooltip-error red" data-rel="tooltip" title="Delete">
                                                             <span class="red"><i class="icon-trash bigger-120"></i></span>
                                                         </a>
                                                     </li>
@@ -192,12 +194,10 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
-        $('.red').click(function(){
-            var r = confirm("Có muốn xóa ko!");
-            if (r == true) {
-                $(this).attr('href','<?php echo $this->createUrl('category/deleteCat',array("id"=>$model->id)); ?>');
-            }
-        });
+        $('.red').hover(function(){
+            console.log(<?php echo $idNews ?>);
+        })
+
 
         $('#slFilter').change(function(){
             var catid = $(this).val();

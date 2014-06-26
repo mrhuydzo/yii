@@ -137,7 +137,7 @@ class UserController extends Controller
         $model->display_name = $_POST['display_name'];
         $model->password = $_POST['password'];
         $model->email = $_POST['email'];
-        $model->avatar = $_FILES['avatar']['name'];
+        $model->avatar = date('Ymd',time()).'/'.time().$_FILES['avatar']['name'];
         /*Upload Image*/
         $mode = Utils::uploadAvarta('avatar');
         /*End*/

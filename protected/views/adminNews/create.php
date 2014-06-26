@@ -40,7 +40,6 @@
                     <label class="col-sm-1 control-label no-padding-right"> Category </label>
                     <div class="col-sm-5">
                         <select class="col-sm-5 chosen-select" name="slParent" data-placeholder="Choose a Country...">
-                            <option value="">Gốc</option>
                             <?php foreach($listCat as $key2=>$value2){ ?>
                                 <option value="<?php echo $value2->in ?>"><?php echo $value2->title_cat; ?></option>
                                 <?php $listSubCat = Category::getAllSubCat($value2->in); ?>

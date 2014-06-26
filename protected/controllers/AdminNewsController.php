@@ -21,7 +21,7 @@ class AdminNewsController extends Controller
         $model = new news();
         $modelCat = new Category();
 
-        $listNews = $model->findAll(array('order'=>'pub_time ASC'));
+        $listNews = $model->findAll(array('order'=>'id DESC'));
         $listAllCat = $modelCat->findAllBySql('SELECT * FROM category WHERE parent_id is NULL');
 
         $this->render('listNews',array('listNews'=>$listNews,'listAllCat'=>$listAllCat));
@@ -49,10 +49,10 @@ class AdminNewsController extends Controller
         $dcm->user_id = $_POST['slUser'];
         $dcm->catid = $_POST['slParent'];
         $dcm->pub_time = $_POST['pubdate'];
-        $dcm->thumb = $_FILES['thumbNews']['name'];
+        $dcm->thumb = 'upload/'.date('Ymd',time()).'/'.time().$_FILES['thumbNews']['name'];
 
         /*Upload Image*/
-        $dcm = Utils::uploadAvarta('thumbNews');
+        $uploadThumb = Utils::uploadAvarta('thumbNews');
         /*End*/
 
         if($dcm->save()){
@@ -70,8 +70,15 @@ class AdminNewsController extends Controller
     public function actionUpdate(){
 
     }
-    public function actionDelete(){
-
+    public function actionDelete($id){
+        $model = News::model()->findByPk($id);
+        if($model->delete()){
+           /* echo '<pre>';
+            var_dump($model);
+            echo '</pre>';*/
+            $this->redirect(array('listNews'));
+            Yii::app()->user->setFlash('success','Xóa Thành công');
+        };
     }
 
     public function actionFilterNews($catid){
@@ -91,19 +98,19 @@ class AdminNewsController extends Controller
         $html .='<th width="10%">Người tạo</th>';
         $html .='<th width="10%">Action</th>';
         $html .='</thead>';
+        $html .='<tbody>';
         foreach($listNewsById as $key => $value){
-            $html .='</tbody>';
             $html .= '<tr>';
-            $html .= '<td>'. $key .'</td>';
+            $html .= '<td>'. $key + 1 .'</td>';
             $html .= '<td><img src="'.$value->thumb.'" width="50" alt="" /></td>';
             $html .= '<td>'. $value->title .'</td>';
             $html .= '<td> status </td>';
             $html .= '<td>'. $value->pub_time .'</td>';
-            $html .= '<td> Người Tạo </td>';
+            $html .= '<td>'. $user_info .'</td>';
             $html .= '<td> Action </td>';
             $html .= '</tr>';
-            $html .='</tbody>';
         }
+        $html .='</tbody>';
         $html .='</table>';
         echo $html;
         return $listNewsById;
