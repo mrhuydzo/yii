@@ -37,7 +37,7 @@ class AdminNewsController extends Controller
         $listUser = $modelUser->findAll();
         $listCat = $modelCat->findAll();
 
-        $this->render('create',array('listUser'=>$listUser,'listCat'=>$listCat));
+        $this->render('createNews',array('listUser'=>$listUser,'listCat'=>$listCat));
     }
 
     public function actionSave(){
@@ -60,15 +60,47 @@ class AdminNewsController extends Controller
             Yii::app()->user->setFlash('success','Thêm mới thành công');
         }else{
             Yii::app()->user->setFlash('fail', Utils::setAllErrorsToArray($dcm->getErrors()));
-            $this->redirect(array('create'));
+            $this->redirect(array('createNews'));
         }
         ob_flush();
     }
-    public function actionEdit(){
+    public function actionEdit($id){
+        $modelNews = new News;
+        $modelCat = new Category;
+        $modelUser = new User();
 
+        $listUser = $modelUser->findAll();
+        $listCat = $modelCat->findAll();
+
+        $editUser = $modelUser->findByPk($id);
+        $editNews = $modelNews->findByPk($id);
+
+        $this->render('editNews',array('listUser'=>$listUser,'listCat'=>$listCat,'editUser'=>$editUser,'editNews'=>$editNews));
     }
-    public function actionUpdate(){
+    public function actionUpdate($id){
+        ob_start();
+        $modelNews = new News;
+        $modelCat = new Category;
+        $modelUser = new User();
 
+        $updateNews = $modelNews->findByPk($id);
+        $updateNews->title = $_POST['title'];
+        $updateNews->content = $_POST['content'];
+        $updateNews->user_id = $_POST['slUser'];
+        $updateNews->catid = $_POST['slParent'];
+        $updateNews->pub_time = $_POST['pubdate'];
+        $updateNews->thumb = 'upload/'.date('Ymd',time()).'/'.time().$_FILES['thumbNews']['name'];
+
+        $updateImg = Utils::uploadAvarta('thumbNews');
+
+        if($updateNews->update()){
+            $this->redirect(array('listNews'));
+            Yii::app()->user->setFlash('success','Sửa thành công');
+        }else{
+            Yii::app()->user->setFlash('fail', Utils::setAllErrorsToArray($dcm->getErrors()));
+            $this->redirect(array('createNews'));
+        }
+        ob_flush();
     }
     public function actionDelete($id){
         $model = News::model()->findByPk($id);
@@ -83,10 +115,28 @@ class AdminNewsController extends Controller
 
     public function actionFilterNews($catid){
         $model = new news();
+        $modelCat = new Category();
         $user_info = User::getUsernameFromID($model->user_id);
+        if($user_info){
+            $user_info[0]->display_name;
+        }
 
-        //$listNewsById = $model->findByPk($catid);
-        $listNewsById = $model->findAllbySQl('SELECT * FROM news WHERE catid = "'. $catid .'"');
+        //$listParentCatid = $modelCat->findAllbySQl('SELECT * FROM category WHERE parent_id = "'. $parent_id .'"');
+        $listParentCatid = Category::getAllSubCat($catid);
+        if($listParentCatid) {
+        $sub = array();
+        foreach($listParentCatid as $parent) {
+            $sub[] = $parent->in;
+/*            echo '<pre>';
+                var_dump($sub);die;
+            echo '</pre>';*/
+        }
+        $sub_string = implode(',',$sub);
+            $listNewsById = $model->findAllbySQl('SELECT * FROM news WHERE catid IN ('.$catid.','.$sub_string.')');
+        } else {
+            $listNewsById = $model->findAllbySQl('SELECT * FROM news WHERE catid IN ('.$catid.')');
+        }
+
         $html='';
         $html .='<table id="sample-table-2" class="table table-striped table-bordered table-hover">';
         $html .='</thead>';
@@ -101,7 +151,7 @@ class AdminNewsController extends Controller
         $html .='<tbody>';
         foreach($listNewsById as $key => $value){
             $html .= '<tr>';
-            $html .= '<td>'. $key + 1 .'</td>';
+            $html .= '<td>'. $key .'</td>';
             $html .= '<td><img src="'.$value->thumb.'" width="50" alt="" /></td>';
             $html .= '<td>'. $value->title .'</td>';
             $html .= '<td> status </td>';

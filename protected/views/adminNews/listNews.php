@@ -19,7 +19,7 @@
                         <div class="col-md-7">
                             Danh sách Category
                         </div>
-                        <div class="col-md-5">Lọc theo
+                        <div class="col-md-5">
                             <select name="slFilter" class="slFilter" id="slFilter">
                                 <option>Lọc theo</option>
                                 <?php foreach($listAllCat as $key => $value){ ?>
@@ -33,7 +33,7 @@
                         </div>
                     </div>
                     <div class="table-responsive">
-                        <table id="sample-table-2" class="table table-striped table-bordered table-hover">
+                        <table id="sample-table-2" class="table table-striped table-bordered table-hover dataTables_wrapper" role="grid">
                             <thead>
                             <tr>
                                 <th width="5%">STT</th>
@@ -54,17 +54,20 @@
                                     <td><?php echo $key + 1 ;?></td>
                                     <td><?php echo $model->id ;?></td>
                                     <td><a href="" title=""><img src="upload/<?php echo $model->thumb ?>" width="50" alt="" /></a></td>
-                                    <td><a href=""><?php echo $model->title ?></a></td>
+                                    <td><a href="<?php echo $this->createUrl('adminNews/edit',array("id"=>$model->id)); ?>"><?php echo $model->title ?></a></td>
                                     <td><a href="">Status</a></td>
                                     <td><?php echo $model->pub_time ?></td>
                                     <?php $user_info = User::getUsernameFromID($model->user_id); ?>
-                                    <td><?php if($user_info) { echo $user_info[0]->display_name;}?></td>
+                                    <td>
+                                        <?php if($user_info) { echo $user_info[0]->display_name;}?>
+                                        <?php echo '<div><b>'.$model->user_id.'</b><div>'; ?>
+                                    </td>
                                     <td>
                                         <div class="visible-md visible-lg hidden-sm hidden-xs action-buttons">
                                             <a class="blue" href="">
                                                 <i class="icon-zoom-in bigger-130"></i>
                                             </a>
-                                            <a class="green" href="">
+                                            <a class="green" href="<?php echo $this->createUrl('adminNews/edit',array("id"=>$model->id)); ?>">
                                                 <i class="icon-pencil bigger-130"></i>
                                             </a>
                                             <a class="red"  href="javascript:void(0)">
@@ -195,17 +198,24 @@
 <script type="text/javascript">
     $(document).ready(function(){
         $('.red').hover(function(){
-            console.log(<?php echo $idNews ?>);
+            console.log(<?php echo $model->id ?>);
         })
 
 
         $('#slFilter').change(function(){
+            var parentid = $(this).val();
             var catid = $(this).val();
             var dataString ='catid/'+catid;
             $.ajax({
                 type:"POST",
                 url: "<?php  echo Yii::app()->createUrl('AdminNews/FilterNews'); ?>/"+dataString,
                 data: dataString,
+/*                beforeSend: function(){
+                    $('#loading').show();
+                },
+                complete: function(){
+                    $('#loading').hide();
+                },*/
                 success:function(html){
                     $("#sample-table-2").html(html);
                 },

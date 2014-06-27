@@ -17944,3 +17944,1370 @@ Stack trace:
 REQUEST_URI=/Private/yii/huyzo/index.php?r=adminNews/listNews
 HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
 ---
+2014/06/26 07:47:00 [error] [php] Object of class News could not be converted to string (D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php:109)
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): AdminNewsController->runAction()
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): AdminNewsController->runActionWithFilters()
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): AdminNewsController->run()
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CWebApplication->run()
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/6
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (109)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/26 07:56:23 [error] [php] Invalid argument supplied for foreach() (D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php:105)
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): AdminNewsController->runAction()
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): AdminNewsController->runActionWithFilters()
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): AdminNewsController->run()
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CWebApplication->run()
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/11
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (105)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/26 08:14:28 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'parent_id' in 'where clause'. The SQL statement executed was: SELECT * FROM news WHERE parent_id = "".
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (93)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/26 08:14:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'parent_id' in 'where clause'. The SQL statement executed was: SELECT * FROM news WHERE parent_id = ""' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\ar\CActiveRecord.php(1581): CDbCommand->queryAll()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(93): CActiveRecord->findAllBySql('SELECT * FROM n...')
+#3 [internal function]: AdminNewsController->actionFilterNews('1')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AdminNewsController), Array)
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdminNewsController), Object(ReflectionMethod), Array)
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/1
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---
+2014/06/26 08:16:06 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/parent_id/1
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---
+2014/06/26 08:16:14 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/parent_id/1
+---
+2014/06/26 08:16:19 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/parent_id/3
+---
+2014/06/26 08:16:32 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/parent_id/3
+---
+2014/06/26 08:18:25 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/parent_id/1
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---
+2014/06/26 08:46:11 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM news WHERE catid IN (1,).
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (94)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/26 08:46:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM news WHERE catid IN (1,)' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\ar\CActiveRecord.php(1581): CDbCommand->queryAll()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(94): CActiveRecord->findAllBySql('SELECT * FROM n...')
+#3 [internal function]: AdminNewsController->actionFilterNews('1')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AdminNewsController), Array)
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdminNewsController), Object(ReflectionMethod), Array)
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/1
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---
+2014/06/26 08:50:45 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/parentid/1
+---
+2014/06/26 08:51:05 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/parentid/1
+---
+2014/06/26 08:51:05 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/parentid/1
+---
+2014/06/26 08:51:18 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/parentid/1
+---
+2014/06/26 08:51:19 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/parentid/1
+---
+2014/06/26 08:51:21 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/parent_id/1
+---
+2014/06/26 08:51:23 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/parent_id/
+---
+2014/06/26 08:51:25 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews
+---
+2014/06/26 08:51:33 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/parent_id/1
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---
+2014/06/26 08:52:30 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/parent_id/1
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---
+2014/06/26 08:53:55 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/parentid/1
+---
+2014/06/26 08:54:20 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/parent_id/1
+---
+2014/06/26 08:54:22 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/parentid/1
+---
+2014/06/26 08:55:25 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'in FROM category WHERE parent_id = ""' at line 1. The SQL statement executed was: SELECT in FROM category WHERE parent_id = "".
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (92)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/26 08:55:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'in FROM category WHERE parent_id = ""' at line 1. The SQL statement executed was: SELECT in FROM category WHERE parent_id = ""' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\ar\CActiveRecord.php(1581): CDbCommand->queryAll()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(92): CActiveRecord->findAllBySql('SELECT in FROM ...')
+#3 [internal function]: AdminNewsController->actionFilterNews('1')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AdminNewsController), Array)
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdminNewsController), Object(ReflectionMethod), Array)
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/1
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---
+2014/06/26 08:56:01 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'in FROM category WHERE parent_id = ""' at line 1. The SQL statement executed was: SELECT in FROM category WHERE parent_id = "".
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (92)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/26 08:56:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'in FROM category WHERE parent_id = ""' at line 1. The SQL statement executed was: SELECT in FROM category WHERE parent_id = ""' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\ar\CActiveRecord.php(1581): CDbCommand->queryAll()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(92): CActiveRecord->findAllBySql('SELECT in FROM ...')
+#3 [internal function]: AdminNewsController->actionFilterNews('5')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AdminNewsController), Array)
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdminNewsController), Object(ReflectionMethod), Array)
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/5
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---
+2014/06/26 10:49:30 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/1
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---
+2014/06/26 10:50:03 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/6
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---
+2014/06/26 10:50:37 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/parent_id/5
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---
+2014/06/26 10:50:42 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/parent_id/5
+---
+2014/06/26 10:50:45 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/parent_id/1
+---
+2014/06/26 10:51:41 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/parent_id/1
+---
+2014/06/26 10:51:46 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/1
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---
+2014/06/26 10:52:12 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/1
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---
+2014/06/26 10:52:22 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/parent_id/1
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---
+2014/06/26 10:54:10 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/1
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---
+2014/06/26 10:54:15 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/1
+---
+2014/06/26 10:54:57 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/1
+---
+2014/06/26 11:22:24 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('listNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('adminNews/listN...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=adminNews/listNews
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---
+2014/06/26 11:22:30 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('listNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('adminNews/listN...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=adminNews/listNews
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---
+2014/06/26 11:22:37 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('listNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('adminNews/listN...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=adminNews/listNews/parentid/1
+---
+2014/06/26 11:27:50 [error] [php] Missing argument 1 for Category::getAllSubCat(), called in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php on line 93 and defined (D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\models\Category.php:115)
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): AdminNewsController->runAction()
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): AdminNewsController->runActionWithFilters()
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): AdminNewsController->run()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CWebApplication->run()
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/1
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\models\Category.php (115)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (93)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/26 11:34:56 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'. The SQL statement executed was: SELECT * FROM news WHERE catid IN (1,Array).
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (98)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/26 11:34:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'. The SQL statement executed was: SELECT * FROM news WHERE catid IN (1,Array)' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\ar\CActiveRecord.php(1581): CDbCommand->queryAll()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(98): CActiveRecord->findAllBySql('SELECT * FROM n...')
+#3 [internal function]: AdminNewsController->actionFilterNews('1')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AdminNewsController), Array)
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdminNewsController), Object(ReflectionMethod), Array)
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/1
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews/parentid/1
+---
+2014/06/26 11:35:40 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'. The SQL statement executed was: SELECT * FROM news WHERE catid IN (6,Array).
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (98)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/26 11:35:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'. The SQL statement executed was: SELECT * FROM news WHERE catid IN (6,Array)' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\ar\CActiveRecord.php(1581): CDbCommand->queryAll()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(98): CActiveRecord->findAllBySql('SELECT * FROM n...')
+#3 [internal function]: AdminNewsController->actionFilterNews('6')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AdminNewsController), Array)
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdminNewsController), Object(ReflectionMethod), Array)
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/6
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews/parentid/1
+---
+2014/06/26 11:35:47 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'. The SQL statement executed was: SELECT * FROM news WHERE catid IN (1,Array).
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (98)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/26 11:35:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'. The SQL statement executed was: SELECT * FROM news WHERE catid IN (1,Array)' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\ar\CActiveRecord.php(1581): CDbCommand->queryAll()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(98): CActiveRecord->findAllBySql('SELECT * FROM n...')
+#3 [internal function]: AdminNewsController->actionFilterNews('1')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AdminNewsController), Array)
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdminNewsController), Object(ReflectionMethod), Array)
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/1
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews/parentid/1
+---
+2014/06/26 11:35:59 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'. The SQL statement executed was: SELECT * FROM news WHERE catid IN (1,Array).
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (98)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/26 11:35:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'. The SQL statement executed was: SELECT * FROM news WHERE catid IN (1,Array)' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\ar\CActiveRecord.php(1581): CDbCommand->queryAll()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(98): CActiveRecord->findAllBySql('SELECT * FROM n...')
+#3 [internal function]: AdminNewsController->actionFilterNews('1')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AdminNewsController), Array)
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdminNewsController), Object(ReflectionMethod), Array)
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/1
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews/
+---
+2014/06/26 11:36:29 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/0
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews/
+---
+2014/06/26 11:36:46 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'. The SQL statement executed was: SELECT * FROM news WHERE catid IN (11,Array).
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (98)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/26 11:36:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'. The SQL statement executed was: SELECT * FROM news WHERE catid IN (11,Array)' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\ar\CActiveRecord.php(1581): CDbCommand->queryAll()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(98): CActiveRecord->findAllBySql('SELECT * FROM n...')
+#3 [internal function]: AdminNewsController->actionFilterNews('11')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AdminNewsController), Array)
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdminNewsController), Object(ReflectionMethod), Array)
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/11
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews/
+---
+2014/06/26 11:37:14 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/0
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews/
+---
+2014/06/26 11:37:19 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/0
+---
+2014/06/26 11:37:24 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/16
+---
+2014/06/26 11:37:26 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/16
+---
+2014/06/26 11:37:29 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/1
+---
+2014/06/26 11:37:37 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/parent_id/1
+---
+2014/06/26 11:37:59 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/parent_id/1
+---
+2014/06/26 11:39:21 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'. The SQL statement executed was: SELECT * FROM news WHERE catid IN (5,Array).
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (98)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/26 11:39:21 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'. The SQL statement executed was: SELECT * FROM news WHERE catid IN (5,Array)' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\ar\CActiveRecord.php(1581): CDbCommand->queryAll()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(98): CActiveRecord->findAllBySql('SELECT * FROM n...')
+#3 [internal function]: AdminNewsController->actionFilterNews('5')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AdminNewsController), Array)
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdminNewsController), Object(ReflectionMethod), Array)
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/5
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews/
+---
+2014/06/26 11:39:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'. The SQL statement executed was: SELECT * FROM news WHERE catid IN (5,Array).
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (98)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/26 11:39:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'. The SQL statement executed was: SELECT * FROM news WHERE catid IN (5,Array)' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\ar\CActiveRecord.php(1581): CDbCommand->queryAll()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(98): CActiveRecord->findAllBySql('SELECT * FROM n...')
+#3 [internal function]: AdminNewsController->actionFilterNews('5')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AdminNewsController), Array)
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdminNewsController), Object(ReflectionMethod), Array)
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/5
+---
+2014/06/26 11:44:43 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'. The SQL statement executed was: SELECT * FROM news WHERE catid IN (1,Array).
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (101)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/26 11:44:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'. The SQL statement executed was: SELECT * FROM news WHERE catid IN (1,Array)' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\ar\CActiveRecord.php(1581): CDbCommand->queryAll()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(101): CActiveRecord->findAllBySql('SELECT * FROM n...')
+#3 [internal function]: AdminNewsController->actionFilterNews('1')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AdminNewsController), Array)
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdminNewsController), Object(ReflectionMethod), Array)
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/1
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews/
+---
+2014/06/26 11:47:00 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'theo)' at line 1. The SQL statement executed was: SELECT * FROM news WHERE catid IN (Lọc theo).
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (99)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/26 11:47:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'theo)' at line 1. The SQL statement executed was: SELECT * FROM news WHERE catid IN (Lọc theo)' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\ar\CActiveRecord.php(1581): CDbCommand->queryAll()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(99): CActiveRecord->findAllBySql('SELECT * FROM n...')
+#3 [internal function]: AdminNewsController->actionFilterNews('L???c theo')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AdminNewsController), Array)
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdminNewsController), Object(ReflectionMethod), Array)
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/L%E1%BB%8Dc%20theo
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews/
+---
+2014/06/26 11:59:53 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'. The SQL statement executed was: SELECT * FROM news WHERE catid IN (1,Array).
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (99)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/26 11:59:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'. The SQL statement executed was: SELECT * FROM news WHERE catid IN (1,Array)' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\ar\CActiveRecord.php(1581): CDbCommand->queryAll()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(99): CActiveRecord->findAllBySql('SELECT * FROM n...')
+#3 [internal function]: AdminNewsController->actionFilterNews('1')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AdminNewsController), Array)
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdminNewsController), Object(ReflectionMethod), Array)
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/1
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews/
+---
+2014/06/27 08:03:49 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('edit')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('adminNews/edit')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=adminNews/edit
+---
+2014/06/27 08:03:58 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('edit')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('adminNews/edit/...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=adminNews/edit/1
+---
+2014/06/27 08:04:01 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('edit')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('adminNews/edit/...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=adminNews/edit/5
+---
+2014/06/27 08:04:03 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('edit')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('adminNews/edit/...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=adminNews/edit/8
+---
+2014/06/27 08:04:04 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('edit')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('adminNews/edit/...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=adminNews/edit/5
+---
+2014/06/27 08:04:05 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('edit')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('adminNews/edit/...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=adminNews/edit/1
+---
+2014/06/27 08:05:41 [error] [php] Invalid argument supplied for foreach() (D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\views\adminNews\edit.php:25)
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(869): AdminNewsController->renderFile()
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(782): AdminNewsController->renderPartial()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(69): AdminNewsController->render()
+#3 unknown(0): AdminNewsController->actionEdit()
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): AdminNewsController->runAction()
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): AdminNewsController->runActionWithFilters()
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): AdminNewsController->run()
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CWebApplication->run()
+REQUEST_URI=/Private/yii/huyzo/index.php?r=adminNews/edit&id=40
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\views\adminNews\edit.php (25)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (69)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/27 08:11:31 [error] [php] Invalid argument supplied for foreach() (D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\views\adminNews\edit.php:25)
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(869): AdminNewsController->renderFile()
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(782): AdminNewsController->renderPartial()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(69): AdminNewsController->render()
+#3 unknown(0): AdminNewsController->actionEdit()
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): AdminNewsController->runAction()
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): AdminNewsController->runActionWithFilters()
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): AdminNewsController->run()
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CWebApplication->run()
+REQUEST_URI=/Private/yii/huyzo/index.php?r=adminNews/edit&id=40
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\views\adminNews\edit.php (25)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (69)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/27 08:11:32 [error] [php] Invalid argument supplied for foreach() (D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\views\adminNews\edit.php:25)
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(869): AdminNewsController->renderFile()
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(782): AdminNewsController->renderPartial()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(69): AdminNewsController->render()
+#3 unknown(0): AdminNewsController->actionEdit()
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): AdminNewsController->runAction()
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): AdminNewsController->runActionWithFilters()
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): AdminNewsController->run()
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CWebApplication->run()
+REQUEST_URI=/Private/yii/huyzo/index.php?r=adminNews/edit&id=40
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\views\adminNews\edit.php (25)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (69)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/27 08:11:33 [error] [php] Invalid argument supplied for foreach() (D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\views\adminNews\edit.php:25)
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(869): AdminNewsController->renderFile()
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(782): AdminNewsController->renderPartial()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(69): AdminNewsController->render()
+#3 unknown(0): AdminNewsController->actionEdit()
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): AdminNewsController->runAction()
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): AdminNewsController->runActionWithFilters()
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): AdminNewsController->run()
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CWebApplication->run()
+REQUEST_URI=/Private/yii/huyzo/index.php?r=adminNews/edit&id=40
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\views\adminNews\edit.php (25)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (69)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/27 08:11:40 [error] [php] Invalid argument supplied for foreach() (D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\views\adminNews\edit.php:25)
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(869): AdminNewsController->renderFile()
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(782): AdminNewsController->renderPartial()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(69): AdminNewsController->render()
+#3 unknown(0): AdminNewsController->actionEdit()
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): AdminNewsController->runAction()
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): AdminNewsController->runActionWithFilters()
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): AdminNewsController->run()
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CWebApplication->run()
+REQUEST_URI=/Private/yii/huyzo/index.php?r=adminNews/edit&id=40
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\views\adminNews\edit.php (25)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (69)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/27 08:11:43 [error] [php] Invalid argument supplied for foreach() (D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\views\adminNews\edit.php:25)
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(869): AdminNewsController->renderFile()
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(782): AdminNewsController->renderPartial()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(69): AdminNewsController->render()
+#3 unknown(0): AdminNewsController->actionEdit()
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): AdminNewsController->runAction()
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): AdminNewsController->runActionWithFilters()
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): AdminNewsController->run()
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CWebApplication->run()
+REQUEST_URI=/Private/yii/huyzo/index.php?r=adminNews/edit&id=33
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\views\adminNews\edit.php (25)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (69)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/27 08:12:48 [error] [php] Invalid argument supplied for foreach() (D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\views\adminNews\edit.php:25)
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(869): AdminNewsController->renderFile()
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(782): AdminNewsController->renderPartial()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(69): AdminNewsController->render()
+#3 unknown(0): AdminNewsController->actionEdit()
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): AdminNewsController->runAction()
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): AdminNewsController->runActionWithFilters()
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): AdminNewsController->run()
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CWebApplication->run()
+REQUEST_URI=/Private/yii/huyzo/index.php?r=adminNews/edit&id=33
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\views\adminNews\edit.php (25)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (69)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/27 08:13:13 [error] [php] Invalid argument supplied for foreach() (D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\views\adminNews\edit.php:25)
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(869): AdminNewsController->renderFile()
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(782): AdminNewsController->renderPartial()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(69): AdminNewsController->render()
+#3 unknown(0): AdminNewsController->actionEdit()
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): AdminNewsController->runAction()
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): AdminNewsController->runActionWithFilters()
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): AdminNewsController->run()
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CWebApplication->run()
+REQUEST_URI=/Private/yii/huyzo/index.php?r=adminNews/edit&id=33
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\views\adminNews\edit.php (25)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (69)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/27 08:13:26 [error] [php] Invalid argument supplied for foreach() (D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\views\adminNews\edit.php:25)
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(869): AdminNewsController->renderFile()
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(782): AdminNewsController->renderPartial()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(69): AdminNewsController->render()
+#3 unknown(0): AdminNewsController->actionEdit()
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): AdminNewsController->runAction()
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): AdminNewsController->runActionWithFilters()
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): AdminNewsController->run()
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CWebApplication->run()
+REQUEST_URI=/Private/yii/huyzo/index.php?r=adminNews/edit&id=33
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\views\adminNews\edit.php (25)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (69)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/27 08:17:48 [error] [php] Invalid argument supplied for foreach() (D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\views\adminNews\edit.php:25)
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(869): AdminNewsController->renderFile()
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(782): AdminNewsController->renderPartial()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(69): AdminNewsController->render()
+#3 unknown(0): AdminNewsController->actionEdit()
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): AdminNewsController->runAction()
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): AdminNewsController->runActionWithFilters()
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): AdminNewsController->run()
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CWebApplication->run()
+REQUEST_URI=/Private/yii/huyzo/index.php?r=adminNews/edit&id=33
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\views\adminNews\edit.php (25)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (69)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/27 08:21:35 [error] [php] Invalid argument supplied for foreach() (D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\views\adminNews\editNews.php:25)
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(869): AdminNewsController->renderFile()
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(782): AdminNewsController->renderPartial()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(69): AdminNewsController->render()
+#3 unknown(0): AdminNewsController->actionEdit()
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): AdminNewsController->runAction()
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): AdminNewsController->runActionWithFilters()
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): AdminNewsController->run()
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CWebApplication->run()
+REQUEST_URI=/Private/yii/huyzo/index.php?r=adminNews/edit&id=33
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\views\adminNews\editNews.php (25)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (69)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/27 08:26:48 [error] [php] Invalid argument supplied for foreach() (D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\views\adminNews\editNews.php:25)
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(869): AdminNewsController->renderFile()
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(782): AdminNewsController->renderPartial()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(75): AdminNewsController->render()
+#3 unknown(0): AdminNewsController->actionEdit()
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): AdminNewsController->runAction()
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): AdminNewsController->runActionWithFilters()
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): AdminNewsController->run()
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CWebApplication->run()
+REQUEST_URI=/Private/yii/huyzo/index.php?r=adminNews/edit&id=33
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\views\adminNews\editNews.php (25)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (75)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/27 08:32:28 [error] [php] Invalid argument supplied for foreach() (D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\views\adminNews\editNews.php:33)
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(869): AdminNewsController->renderFile()
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(782): AdminNewsController->renderPartial()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(75): AdminNewsController->render()
+#3 unknown(0): AdminNewsController->actionEdit()
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): AdminNewsController->runAction()
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): AdminNewsController->runActionWithFilters()
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): AdminNewsController->run()
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CWebApplication->run()
+REQUEST_URI=/Private/yii/huyzo/index.php?r=adminNews/edit&id=33
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\views\adminNews\editNews.php (33)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (75)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/27 08:50:55 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('adminNews/updat...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=adminNews/update
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/edit&id=241
+---
+2014/06/27 10:56:39 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM news WHERE catid IN (5,).
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (134)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/27 10:56:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM news WHERE catid IN (5,)' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\ar\CActiveRecord.php(1581): CDbCommand->queryAll()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(134): CActiveRecord->findAllBySql('SELECT * FROM n...')
+#3 [internal function]: AdminNewsController->actionFilterNews('5')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AdminNewsController), Array)
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdminNewsController), Object(ReflectionMethod), Array)
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/5
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---
+2014/06/27 10:56:42 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM news WHERE catid IN (6,).
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (134)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/27 10:56:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM news WHERE catid IN (6,)' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\ar\CActiveRecord.php(1581): CDbCommand->queryAll()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(134): CActiveRecord->findAllBySql('SELECT * FROM n...')
+#3 [internal function]: AdminNewsController->actionFilterNews('6')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AdminNewsController), Array)
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdminNewsController), Object(ReflectionMethod), Array)
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/6
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---
+2014/06/27 10:57:06 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM news WHERE catid IN (5,).
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (134)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/27 10:57:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM news WHERE catid IN (5,)' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\ar\CActiveRecord.php(1581): CDbCommand->queryAll()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(134): CActiveRecord->findAllBySql('SELECT * FROM n...')
+#3 [internal function]: AdminNewsController->actionFilterNews('5')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AdminNewsController), Array)
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdminNewsController), Object(ReflectionMethod), Array)
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/5
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---
+2014/06/27 10:57:20 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM news WHERE catid IN (5,).
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (134)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/27 10:57:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1. The SQL statement executed was: SELECT * FROM news WHERE catid IN (5,)' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\ar\CActiveRecord.php(1581): CDbCommand->queryAll()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(134): CActiveRecord->findAllBySql('SELECT * FROM n...')
+#3 [internal function]: AdminNewsController->actionFilterNews('5')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AdminNewsController), Array)
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdminNewsController), Object(ReflectionMethod), Array)
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/5
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---
+2014/06/27 10:59:13 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'theo)' at line 1. The SQL statement executed was: SELECT * FROM news WHERE catid IN (Lọc theo).
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (134)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/27 10:59:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'theo)' at line 1. The SQL statement executed was: SELECT * FROM news WHERE catid IN (Lọc theo)' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\ar\CActiveRecord.php(1581): CDbCommand->queryAll()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(134): CActiveRecord->findAllBySql('SELECT * FROM n...')
+#3 [internal function]: AdminNewsController->actionFilterNews('L???c theo')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AdminNewsController), Array)
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdminNewsController), Object(ReflectionMethod), Array)
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/L%E1%BB%8Dc%20theo
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---
+2014/06/27 11:03:19 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'theo)' at line 1. The SQL statement executed was: SELECT * FROM news WHERE catid IN (Lọc theo).
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (137)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/27 11:03:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'theo)' at line 1. The SQL statement executed was: SELECT * FROM news WHERE catid IN (Lọc theo)' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\ar\CActiveRecord.php(1581): CDbCommand->queryAll()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(137): CActiveRecord->findAllBySql('SELECT * FROM n...')
+#3 [internal function]: AdminNewsController->actionFilterNews('L???c theo')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AdminNewsController), Array)
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdminNewsController), Object(ReflectionMethod), Array)
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/L%E1%BB%8Dc%20theo
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---
+2014/06/27 11:07:39 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'in FROM category WHERE parent_id = ""' at line 1. The SQL statement executed was: SELECT in FROM category WHERE parent_id = "".
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php (124)
+in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php (14)
+2014/06/27 11:07:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'in FROM category WHERE parent_id = ""' at line 1. The SQL statement executed was: SELECT in FROM category WHERE parent_id = ""' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\db\ar\CActiveRecord.php(1581): CDbCommand->queryAll()
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\protected\controllers\AdminNewsController.php(124): CActiveRecord->findAllBySql('SELECT in FROM ...')
+#3 [internal function]: AdminNewsController->actionFilterNews('1')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AdminNewsController), Array)
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AdminNewsController), Object(ReflectionMethod), Array)
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('FilterNews')
+#10 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('AdminNews/Filte...')
+#11 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#13 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=AdminNews/FilterNews/catid/1
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/listNews
+---
+2014/06/27 12:19:09 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('adminNews/updat...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=adminNews/update
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/edit&id=241
+---
+2014/06/27 12:21:42 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php:336
+Stack trace:
+#0 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#4 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('adminNews/updat...')
+#5 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Xamp\htdocs\OpenServer\domains\localhost\Private\yii\huyzo\index.php(14): CApplication->run()
+#7 {main}
+REQUEST_URI=/Private/yii/huyzo/index.php?r=adminNews/update
+HTTP_REFERER=http://localhost/Private/yii/huyzo/index.php?r=adminNews/edit&id=56
+---
